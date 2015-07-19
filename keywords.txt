@@ -1,0 +1,32 @@
+########################################
+# Syntax Coloring Map For NXTMotor
+########################################
+
+########################################
+# Datatypes (KEYWORD1)
+########################################
+
+NXTMotor                       	KEYWORD1
+
+########################################
+# Methods and Functions (KEYWORD2)
+########################################
+
+update                         	KEYWORD2
+sampleTime                  	KEYWORD2
+supplyVoltage                   KEYWORD2
+tuneSpeedPID                   	KEYWORD2
+tuneAnglePID                   	KEYWORD2
+voltage                         KEYWORD2
+speed                           KEYWORD2
+brake                          	KEYWORD2
+sngle                           KEYWORD2
+hold                           	KEYWORD2
+reset                          	KEYWORD2
+torque                          KEYWORD2
+completed                    	KEYWORD2
+
+########################################
+# Constants (LITERAL1)
+########################################
+
