@@ -1,7 +1,7 @@
 //
 //  NXTServo.h
 //
-//
+// ciao
 //  Created by Sebastian Giles on 12/12/14.
 //
 //
@@ -27,26 +27,26 @@
 
 class NXTServo : public Motor, private Encoder{
 public:
-    
+
     NXTServo(int fwdPin, int revPin, int interruptPin, int quadraturePin);
-    
+
     //returns true if something changes meaning sampleTime has passed
     //should be run very frequently
     bool update();
-    
+
     //takes integer value in millis
     void setSampleTime(int newSampleTime);
-            
+
     void tuneSpeedPID(float kp, float ki, float kd);
-    
+
     void tuneAnglePID(float kp, float ki, float kd);
-        
+
     //Gets motor cruising at specified speed
     void turnAt(float speed); //in rpm
 
     //stops the motor as fast as possible
     void brake();
-    
+
     //Turns motor to given position
     void goTo(float angle); //in degrees
 
@@ -64,9 +64,9 @@ public:
 
     //returns struct from PID object
     PIDData* getData();
-        
+
 private:
-    
+
     PID speedController;
     PID angleController;
 
@@ -75,12 +75,12 @@ private:
     enum mode {OFF, SPEED, ANGLE};
 
     mode currentState = OFF;
-    
+
     int sampleTime = DEFAULT_SAMPLE_TIME;
-        
+
     long lastTime; //in millis, used to check if updating is needed
     float lastAngle; //both are used to compute speed
-    
+
 };
 
 
