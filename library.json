@@ -1,0 +1,10 @@
+{
+  "name": "NXTMotor",
+  "keywords": "NXTMotor, motor, pid, position, control, speed",
+  "description": "NXTMotor control library",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/sebgiles/nxtmotor"
+  }
+}
